@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Aaryan Arts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Aaryan Arts</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#" class="active">Login/Register</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label>Full Name:</label>
+      <input type="text" id="name" required />
+
+      <label>Address:</label>
+      <textarea id="address" required></textarea>
+
+      <label>Pincode:</label>
+      <input type="text" id="pincode" pattern="\d{6}" required />
+
+      <label>Date of Birth:</label>
+      <input type="date" id="dob" required />
+
+      <label>Email-ID:</label>
+      <input type="email" id="email" required />
+
+      <label>Password:</label>
+      <input type="password" id="password" required />
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword" required />
+
+      <button type="submit">Register</button>
+      <p><a href="login.html">Already Registered? Login</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
